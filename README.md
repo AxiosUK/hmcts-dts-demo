@@ -77,9 +77,7 @@ services:
       - RATE_LIMIT_MAX=200
 
   axios-dts-frontend:
-    image: ghcr.io/axiosuk/dts-frontend:1.1.1
-    labels:
-      - "org.opencontainers.image.version=1.1.1"
+    image: ghcr.io/axiosuk/dts-frontend:latest
     environment:
       - API_BASE_URL=https://api.example.com
     restart: unless-stopped
